@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    overflow: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(4, 25fr);
+}
+
+.search {
+    border: 1px solid black;
+}
+
+.header {
+    border: 1px solid black;
+}
+
+.sidebar {
+    border: 1px solid black;
+}
+
+.body {
+    border: 1px solid black;
+}
+
+.announcements {
+    border: 1px solid black;
+}
+
+.trending {
+    border: 1px solid black;
+}
