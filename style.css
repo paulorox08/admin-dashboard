@@ -1,10 +1,12 @@
+/* BODY */
+
 body {
     margin: 0;
     color: var(--text-colour);
     background-color: var(--bg-colour);
 }
 
-
+/* THEMING */
 :root.light {
  --bg-colour: white;
  --text-colour: black;
@@ -16,6 +18,7 @@ body {
     --text-colour: white;
 }
 
+/* CONTAINER */
 .container {
     display: grid;
     height: 100vh;
@@ -28,39 +31,56 @@ body {
     "sidebar body trending";
 }
 
+/* SEARCHBAR */
 .search {
     border: 1px solid black;
     grid-area: search;
+    display: flex;
+    align-items: center;
 }
 
-.material-icons-outlined {
+.monacle {
     font-family: 'Material Icons';
+    margin-left: 2%;
 }
 
 .toggle {
     font-family: 'Material Icons';
 }
 
+.bar {
+    border-radius: 15px;
+    
+}
+
+/* HEADER */
 .header {
     border: 1px solid black;
     grid-area: header;
 }
 
+/* SIDEBAR */
 .sidebar {
     border: 1px solid black;
     grid-area: sidebar;
 }
 
+
+/* BODY */
 .body {
     border: 1px solid black;
     grid-area: body;
 }
 
+
+/* ANNOUNCEMENTS */
 .announcements {
     border: 1px solid black;
     grid-area: announcements;
 }
 
+
+/* TRENDING */
 .trending {
     border: 1px solid black;
     grid-area: trending;
