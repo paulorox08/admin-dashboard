@@ -1,5 +1,19 @@
 body {
     margin: 0;
+    color: var(--text-colour);
+    background-color: var(--bg-colour);
+}
+
+
+:root.light {
+ --bg-colour: white;
+ --text-colour: black;
+}
+
+
+:root.dark {
+    --bg-colour: black;
+    --text-colour: white;
 }
 
 .container {
