@@ -33,6 +33,14 @@ body {
     grid-area: search;
 }
 
+.material-icons-outlined {
+    font-family: 'Material Icons';
+}
+
+.toggle {
+    font-family: 'Material Icons';
+}
+
 .header {
     border: 1px solid black;
     grid-area: header;
