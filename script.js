@@ -1,9 +1,10 @@
 const button = document.querySelector('.toggle');
+const root = document.documentElement;
 
 button.textContent = 'dark_mode';
+root.className = 'light';
 
 function setTheme() {
-    const root = document.documentElement;
     const newTheme = root.className === 'dark' ? 'light' : 'dark';
     root.className = newTheme;
 
