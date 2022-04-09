@@ -50,11 +50,11 @@ body {
     
 }
 
-.toggle {
+.search > button {
     font-family: 'Material Icons';
-    font-size: 22px;
+    font-size: 20px;
     position: absolute;
-    right: 1%;
+    right: 2%;
     border-radius: 50%;
     border: 0;
     background-color: var(--text-colour);
@@ -62,6 +62,7 @@ body {
     width: 33px;
     height: 33px;
     transition-duration: 0.5s;
+    justify-content: center;
 }
 
 .bar {
@@ -101,14 +102,31 @@ body {
     border: 0;
     background-color: var(--bg-colour);
     color: var(--text-colour);
+    transition: 0.5s;
 }
 
 /* BODY */
 .body {
     border: 1px solid black;
     grid-area: body;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+    padding-top: 20px;
+    justify-content: space-between;
 }
 
+.projects {
+    width: 100%;
+
+}
+
+.body > div {
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+}
 
 /* ANNOUNCEMENTS */
 .announcements {
