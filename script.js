@@ -12,6 +12,7 @@ function setTheme() {
     button.textContent = newIcon;
 
 }
+
 button.addEventListener('click', setTheme)
 
 
@@ -24,4 +25,5 @@ function notifications() {
     const bellIcon = notify.textContent === 'notifications_active' ? 'notifications_off' : 'notifications_active';
     notify.textContent = bellIcon;
 };
+
 notify.addEventListener('click', notifications)

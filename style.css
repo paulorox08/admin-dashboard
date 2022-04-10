@@ -10,14 +10,16 @@ body {
 
 /* THEMING */
 :root.light {
- --bg-colour: white;
- --text-colour: black;
+ --bg-colour: #F8F9FA;
+ --text-colour: #212529;
+ --side-colour: #E9ECEF;
 }
 
 
 :root.dark {
-    --bg-colour: black;
-    --text-colour: white;
+    --bg-colour: #212529;
+    --text-colour: #F8F9FA;
+    --side-colour: #495057;
 }
 
 /* CONTAINER */
@@ -39,7 +41,6 @@ body {
     grid-area: search;
     display: flex;
     align-items: center;
-    
 }
 
 .monacle {
@@ -50,33 +51,33 @@ body {
     
 }
 
+.bar {
+    border: 0;
+    background-color: #DEE2E6;
+    text-indent: 10px;
+}
+
+.toggle, 
 .notify {
     font-family: 'Material Icons';
     font-size: 20px;
     position: absolute;
-    right: 5%;
     border-radius: 50%;
     border: 0;
     background-color: var(--text-colour);
     color: var(--bg-colour);
     width: 33px;
     height: 33px;
-    transition-duration: 0.5s;
     justify-content: center;
+    cursor: pointer;
 }
+
+.notify {
+    right: 7%;
+}
+
 .toggle {
-    font-family: 'Material Icons';
-    font-size: 20px;
-    position: absolute;
-    right: 2%;
-    border-radius: 50%;
-    border: 0;
-    background-color: var(--text-colour);
-    color: var(--bg-colour);
-    width: 33px;
-    height: 33px;
-    transition-duration: 0.5s;
-    justify-content: center;
+    right: 4%;
 }
 
 .bar {
@@ -92,7 +93,6 @@ body {
     display: flex;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
 }
 
 .logo {
@@ -103,16 +103,42 @@ body {
     background-color: var(--text-colour);
     border-radius: 50%;
     margin-right: 20px;
+    margin-left: 2%;
 }
 
 .name {
     font-size: 36px;
+    font-weight: 900;
 }
+
 
 .buttons {
     position: absolute;
-    right: 2%;
-    gap: 30px;
+    right: 4%;
+    gap: 40px;
+}
+
+.buttons > button {
+    width: 90px;
+    height: 38px;
+    font-size: 17px;
+    border-radius: 20px;
+    border: 1px solid var(--text-colour);
+    cursor: pointer;
+    background-color: var(--text-colour);
+    color: var(--bg-colour);
+    transition-duration: 0.5s;
+}
+
+.buttons > button:hover {
+    width: 90px;
+    height: 38px;
+    font-size: 17px;
+    border-radius: 20px;
+    border: 1px solid var(--text-colour);
+    cursor: pointer;
+    background-color: var(--bg-colour);
+    color: var(--text-colour)
 }
 
 /* SIDEBAR */
@@ -120,17 +146,57 @@ body {
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
+    background-color: var(--side-colour);
+    transition-duration: 0.5s;
+    align-items: center;
 }
 
-.sidebar > button {
+.titleside {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.dash {
+    font-family: 'Material Icons';
+}
+
+.settings,
+.extra {
+    display: flex;
+    flex-direction: column;
+}
+
+.extra {
+    margin-bottom: 100px;
+}
+.settings > button {
+    gap: 10px;
     font-size: 18px;
     text-align: left;
     height: 30px;
     border: 0;
-    background-color: var(--bg-colour);
+    background-color: var(--side-colour);
     color: var(--text-colour);
     transition: 0.5s;
+}
+.extra > button {
+    font-size: 18px;
+    text-align: left;
+    height: 30px;
+    border: 0;
+    background-color: var(--side-colour);
+    color: var(--text-colour);
+    transition: 0.5s;
+}
+
+.mainSide {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
 }
 
 /* BODY */
