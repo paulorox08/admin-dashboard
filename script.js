@@ -13,3 +13,15 @@ function setTheme() {
 
 }
 button.addEventListener('click', setTheme)
+
+
+
+const notify = document.querySelector('.notify');
+
+notify.textContent = 'notifications_off';
+
+function notifications() {
+    const bellIcon = notify.textContent === 'notifications_active' ? 'notifications_off' : 'notifications_active';
+    notify.textContent = bellIcon;
+};
+notify.addEventListener('click', notifications)
