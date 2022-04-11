@@ -233,7 +233,7 @@ body {
 
 .projects {
     width: 100%;
-    padding: 25px;
+    margin: 2%;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 900;
@@ -247,22 +247,44 @@ body {
 }
 
 .projectContainer > div {
-    width: 350px;
-    height: 175px;
+    width: 310px;
+    height: 135px;
+    padding: 20px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: white;
+    border-left: 10px solid black;
+    text-indent: 5px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* ANNOUNCEMENTS */
 .announcements {
-    border: 1px solid black;
     grid-area: announcements;
+    background-color: #CED4DA;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
+.card1 {
+    width: 275px;
+    height: 300px;
+    background-color: white;
+}
 
 /* TRENDING */
 .trending {
-    border: 1px solid black;
     grid-area: trending;
+    background-color: #CED4DA;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card2 {
+    width: 275px;
+    height: 300px;
+    background-color: white;
 }
