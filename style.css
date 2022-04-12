@@ -93,6 +93,7 @@ body {
     display: flex;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    padding: 10px;
 }
 
 #header {
