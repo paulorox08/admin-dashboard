@@ -27,7 +27,7 @@ body {
     display: grid;
     height: 100vh;
     grid-template-rows: 1fr 1.5fr 6fr 6fr; 
-    grid-template-columns: 0.75fr 2fr 1fr;
+    grid-template-columns: 0.75fr 2fr 0.75fr;
     grid-template-areas: 
     "sidebar search search"
     "sidebar header header"
@@ -251,7 +251,6 @@ body {
     width: 310px;
     height: 135px;
     padding: 20px;
-    border: 1px solid black;
     border-radius: 10px;
     background-color: white;
     border-left: 10px solid black;
@@ -267,14 +266,37 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #CED4DA;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 15px;
+    padding-bottom: 35px;
 }
 
 .card1,
 .card2 {
-    width: 250px;
-    height: 275px;
+    width: 230px;
+    height: 260px;
     background-color: white;
     border-radius: 10px;
+    margin: 5px;
+}
+
+.card1 {
+    margin-top: 10px;
+}
+.announce {
+    width: 100%;
+    margin: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.trend {
+    width: 100%;
+    margin: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    padding-bottom: 5px;
 }
